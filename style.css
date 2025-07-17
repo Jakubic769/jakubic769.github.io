@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+}
+
+main {
+  padding: 30px 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Przyciski */
+.button-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.button-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.big-button {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.big-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #0056b3;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
